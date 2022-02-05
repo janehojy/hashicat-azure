@@ -203,7 +203,7 @@ resource "null_resource" "configure-cat-app" {
   }
 }
 
-resource "azurerm_virtual_machine" "catapp" {
+resource "azurerm_virtual_machine" "jane-test" {
   name                = "${var.prefix}-test"
   location            = var.location
   resource_group_name = azurerm_resource_group.myresourcegroup.name
